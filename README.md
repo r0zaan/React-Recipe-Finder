@@ -3,7 +3,7 @@
 A **ReactJS** application to search, view, and listen to recipes using the **TheMealDB API**.  
 Includes features like **dark/light mode**, **text-to-speech**, and an **interactive recipe modal**.
 
-[🔗 Live Demo](https://react-recipe-maker.netlify.app/)
+[🔗 Live Demo](https://react-recipe-finder.netlify.app/)
 
 ---
 
