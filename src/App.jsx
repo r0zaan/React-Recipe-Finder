@@ -39,6 +39,7 @@ function App() {
     const randomExample =
       exampleQueries[Math.floor(Math.random() * exampleQueries.length)];
     fetchRecipes(randomExample);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // Debounce search while typing
@@ -48,7 +49,7 @@ function App() {
       if (query) fetchRecipes(query);
     }, 700); // wait 700ms after last key press
     setTypingTimeout(timeout);
-  }, [query]);
+  }, [query, typingTimeout]);
 
   return (
     <div className={`${darkMode ? "dark" : ""}`}>
